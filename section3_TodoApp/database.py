@@ -26,7 +26,7 @@ engine = create_engine(SQLALCHEMY_DATABASE_URL)
 
 # Azure SQL DB
 params = urllib.parse.quote_plus\
-    (r'Driver={ODBC Driver 18 for SQL Server};Server=tcp:jaketest001.database.windows.net,1433;Database=TestDB;Uid=codingwithroby;Pwd=Test1234!;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;')
+    (r'Driver={ODBC Driver 18 for SQL Server};Server=tcp:jaketest001.database.windows.net,1433;Database=TestDB;Uid=xxxx;Pwd=xxxxx!;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;')
 SQLALCHEMY_DATABASE_URL = 'mssql+pyodbc:///?odbc_connect={}'.format(params)
 engine = create_engine(SQLALCHEMY_DATABASE_URL,echo=True)
 
